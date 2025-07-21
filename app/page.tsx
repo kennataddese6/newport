@@ -1,6 +1,7 @@
 "use client"
 import About from "@/components/ui/about"
 import CodeSample from "@/components/ui/codesample"
+import Contact from "@/components/ui/contact"
 import { FloatingNav } from "@/components/ui/floating-navbar"
 import Hero from "@/components/ui/hero"
 import Holla from "@/components/ui/holla"
@@ -54,6 +55,7 @@ export default function Page() {
         <Skills />
         <CodeSample />
         <Holla />
+        <Contact />
       </div>
     </div>
   )
