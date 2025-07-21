@@ -21,6 +21,14 @@ const Contact = () => {
           alt="Contact"
           className="w-[24rem] absolute left-1/6 -translate-x-1/2 -bottom-5 -z-10"
         />
+        <Image
+          src="https://apuedge.com/wp-content/uploads/bh_accretiondisk_sim_stationary_websize.gif"
+          width={1200}
+          height={1200}
+          unoptimized
+          alt="Contact"
+          className="w-[24rem] -rotate-z-12 absolute -right-32 -translate-x-1/2 bottom-36 -z-10"
+        />
 
         <form className="w-full md:w-[32%] bg-black/20 backdrop-blur-lg  border-2 border-neutral-800 mx-auto px-8 py-14 rounded-lg">
           <input
