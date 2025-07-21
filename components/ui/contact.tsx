@@ -3,7 +3,7 @@ import Image from "next/image"
 const Contact = () => {
   return (
     <div className="w-full">
-      <h1 className="text-3xl font-semibold text-center mt-24 mb-12 py-48">
+      <h1 className="text-3xl font-semibold text-center mt-24 mb-12 pb-48">
         Talk to me
       </h1>
       <div className="relative  z-10 w-full">
