@@ -23,12 +23,6 @@ const CodeSample = () => {
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
         sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
       ></iframe>
-      <h1 className="text-3xl font-semibold text-center mt-24 mb-12">
-        See my code
-      </h1>{" "}
-      <h1 className="text-3xl font-semibold text-center mt-24 mb-12">
-        See my code
-      </h1>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import About from "@/components/ui/about"
 import CodeSample from "@/components/ui/codesample"
 import { FloatingNav } from "@/components/ui/floating-navbar"
 import Hero from "@/components/ui/hero"
+import Holla from "@/components/ui/holla"
 import Skills from "@/components/ui/skills"
 import { SparklesCore } from "@/components/ui/sparkles"
 import Works from "@/components/ui/works"
@@ -52,6 +53,7 @@ export default function Page() {
         <Works />
         <Skills />
         <CodeSample />
+        <Holla />
       </div>
     </div>
   )
