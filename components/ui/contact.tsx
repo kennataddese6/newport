@@ -30,7 +30,7 @@ const Contact = () => {
           className="w-[24rem] -rotate-z-12 absolute -right-32 -translate-x-1/2 bottom-36 -z-10"
         />
 
-        <form className="w-full md:w-[32%] bg-black/20 backdrop-blur-lg  border-2 border-neutral-800 mx-auto px-8 py-14 rounded-lg">
+        <form className="w-[96%] md:w-[32%] bg-black/20 backdrop-blur-lg  border-2 border-neutral-800 mx-auto px-8 py-14 rounded-lg">
           <input
             type="text"
             placeholder="Your Name"
