@@ -53,7 +53,7 @@ const About = () => {
         width={1600}
         height={1600}
         alt="Sun Image"
-        className="absolute top-[60%] w-[102rem] -z-10 right-0 translate-x-[32%] rotate-[350deg]"
+        className="absolute top-[80%] w-[102rem] -z-10 right-0 translate-x-[32%] rotate-[350deg]"
       />
       <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
