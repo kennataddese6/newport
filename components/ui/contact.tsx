@@ -3,23 +3,23 @@ import Image from "next/image"
 const Contact = () => {
   return (
     <div className="w-full">
-      <h1 className="text-3xl font-semibold text-center mt-24 mb-12 pb-48">
+      <h1 className="text-3xl font-semibold text-center mt-24 mb-12 md:pb-48">
         Talk to me
       </h1>
       <div className="relative  z-10 w-full">
         <Image
           src={"/contactholder.png"}
-          width={600}
-          height={600}
+          width={1200}
+          height={1200}
           alt="Contact"
-          className="w-[42rem] absolute left-1/2 -translate-x-1/2 bottom-0 -z-10"
+          className="hidden md:block w-[42rem] absolute left-1/2 -translate-x-1/2 bottom-0 -z-10"
         />
         <Image
           src={"/egghead.png"}
-          width={600}
-          height={600}
+          width={1200}
+          height={1200}
           alt="Contact"
-          className="w-[24rem] absolute left-1/6 -translate-x-1/2 -bottom-5 -z-10"
+          className="hidden md:block w-[24rem] absolute left-1/6 -translate-x-1/2 -bottom-5 -z-10"
         />
         <Image
           src="https://apuedge.com/wp-content/uploads/bh_accretiondisk_sim_stationary_websize.gif"
