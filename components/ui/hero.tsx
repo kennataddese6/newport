@@ -25,7 +25,7 @@ const Hero = () => {
           alt="Earth image"
           width={500}
           height={500}
-          className="w-[56rem] h-[56rem]"
+          className="w-[36rem] md:w-[56rem] md:h-[56rem]"
         />
       </motion.div>
     </>
