@@ -9,8 +9,8 @@ const About = () => {
   const y = useTransform(scrollYProgress, [0, 1], [0, -1500])
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8])
 
-  const saturny = useTransform(scrollYProgress, [0, 1], [0, -2500])
-  const saturnscale = useTransform(scrollYProgress, [0, 1], [1, 0.3])
+  const saturny = useTransform(scrollYProgress, [0, 1], [0, -1200])
+  const saturnscale = useTransform(scrollYProgress, [0, 1], [1, 0.8])
 
   return (
     <div className="relative z-0 w-full">
@@ -45,7 +45,7 @@ const About = () => {
         width={1600}
         height={1600}
         alt="Saturn Image"
-        className="absolute top-0 w-[54rem] -z-10 right-0 translate-x-1/2 rotate-[320deg]"
+        className="absolute top-36 w-[112rem] -z-10 left-0 -translate-x-1/2"
       />
       <motion.img
         style={{ y, scale }}
@@ -53,7 +53,7 @@ const About = () => {
         width={1600}
         height={1600}
         alt="Sun Image"
-        className="absolute top-[80%] w-[102rem] -z-10 right-0 translate-x-[32%] rotate-[350deg]"
+        className="absolute top-[80%] w-[164rem] -z-10 right-0 translate-x-[32%] rotate-[350deg]"
       />
       <div className="w-full absolute inset-0 h-screen">
         <SparklesCore
