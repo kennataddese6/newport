@@ -1,7 +1,17 @@
+"use client"
 import { GlowingEffect } from "@/components/ui/glowing-effect"
+import { motion, useScroll, useTransform } from "motion/react"
 import Image from "next/image"
 import { SparklesCore } from "./sparkles"
 const About = () => {
+  const { scrollYProgress } = useScroll()
+
+  const y = useTransform(scrollYProgress, [0, 1], [0, -1500])
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.8])
+
+  const saturny = useTransform(scrollYProgress, [0, 1], [0, -2500])
+  const saturnscale = useTransform(scrollYProgress, [0, 1], [1, 0.3])
+
   return (
     <div className="relative z-0 w-full">
       <h1 className="text-3xl font-semibold text-center mb-12">Who am I</h1>
@@ -29,32 +39,32 @@ const About = () => {
         title="A Scientist"
         description="A Bachelor Degree in Computer Science from Jimma University"
       />
-      <Image
+      <motion.img
+        style={{ y: saturny, scale: saturnscale }}
         src={"/saturn.png"}
         width={1600}
         height={1600}
         alt="Saturn Image"
         className="absolute top-0 w-[54rem] -z-10 right-0 translate-x-1/2 rotate-[320deg]"
       />
-      <Image
+      <motion.img
+        style={{ y, scale }}
         src={"/sun.png"}
         width={1600}
         height={1600}
         alt="Sun Image"
         className="absolute top-[60%] w-[102rem] -z-10 right-0 translate-x-[32%] rotate-[350deg]"
       />
-      <div className="h-screen relative -z-20 w-full  flex flex-col items-center justify-center overflow-hidden rounded-md">
-        <div className="w-full absolute inset-0 h-screen">
-          <SparklesCore
-            id="tsparticlesfullpage"
-            background="transparent"
-            minSize={0.6}
-            maxSize={1.4}
-            particleDensity={100}
-            className="w-full h-full"
-            particleColor="#FFFFFF"
-          />
-        </div>
+      <div className="w-full absolute inset-0 h-screen">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={100}
+          className="w-full h-full"
+          particleColor="#FFFFFF"
+        />
       </div>
     </div>
   )

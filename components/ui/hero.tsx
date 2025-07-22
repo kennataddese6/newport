@@ -3,8 +3,8 @@ import { motion, useScroll, useTransform } from "motion/react"
 import Image from "next/image"
 const Hero = () => {
   const { scrollYProgress } = useScroll()
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.3])
-  const y = useTransform(scrollYProgress, [0, 1], [0, -150])
+  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.2])
+  const y = useTransform(scrollYProgress, [0, 1], [0, -1800])
   const opacity = useTransform(scrollYProgress, [0, 1], [1, 0.6])
 
   return (

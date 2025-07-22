@@ -6,7 +6,7 @@ const Works = () => {
   return (
     <div className="text-white">
       <div className="h-auto rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative  overflow-hidden">
-        <h1 className="text-3xl font-semibold text-center mb-12">My work</h1>
+        <h1 className="text-3xl font-semibold text-center mt-36 mb-2">My work</h1>
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
