@@ -134,8 +134,10 @@
 
 html::-webkit-scrollbar {
   display: none;
+  scroll-behavior: smooth;
 }
 html {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+  scroll-behavior: smooth;
 }

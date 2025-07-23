@@ -13,7 +13,7 @@ const About = () => {
   const saturnscale = useTransform(scrollYProgress, [0, 1], [1, 0.8])
 
   return (
-    <div className="relative z-0 w-full">
+    <div className="relative z-0 w-full" id="about">
       <h1 className="text-3xl font-semibold text-center mb-12">Who am I</h1>
       <GridItem
         area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
@@ -41,7 +41,7 @@ const About = () => {
       />
       <motion.img
         style={{ y: saturny, scale: saturnscale }}
-        src={"/image.png"}
+        src={"/saturn.png"}
         width={1600}
         height={1600}
         alt="Saturn Image"

@@ -6,6 +6,7 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "motion/react"
+import Link from "next/link"
 import { JSX, useState } from "react"
 
 export const FloatingNav = ({
@@ -63,7 +64,7 @@ export const FloatingNav = ({
           <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
         </button>
         {navItems.map((navItem: any, idx: number) => (
-          <a
+          <Link
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
@@ -72,7 +73,7 @@ export const FloatingNav = ({
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="hidden sm:block text-sm">{navItem.name}</span>
-          </a>
+          </Link>
         ))}
       </motion.div>
     </AnimatePresence>

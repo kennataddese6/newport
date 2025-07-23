@@ -23,19 +23,19 @@ export default function Page() {
     },
     {
       name: "About",
-      link: "/about",
+      link: "#about",
       icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
       name: "Project",
-      link: "/about",
+      link: "#project",
       icon: (
         <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "#contact",
       icon: (
         <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white" />
       ),

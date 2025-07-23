@@ -4,7 +4,7 @@ import { InfiniteMovingCards } from "./infinite-moving-works"
 
 const Works = () => {
   return (
-    <div className="text-white">
+    <div className="text-white" id="project">
       <div className="h-auto rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative  overflow-hidden">
         <h1 className="text-3xl font-semibold text-center mt-36">My work</h1>
         <InfiniteMovingCards
