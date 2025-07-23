@@ -64,10 +64,17 @@ const Contact = () => {
           ref={form}
           className="w-[96%] md:w-[32%] bg-black/20 backdrop-blur-lg  border-2 border-neutral-800 mx-auto px-8 py-14 rounded-lg"
         >
-          <Input id="firstname" placeholder="Your Name" type="text" required />
+          <Input
+            id="firstname"
+            name="user_name"
+            placeholder="Your Name"
+            type="text"
+            required
+          />
           <br />
           <Input
             id="firstname"
+            name="user_email"
             placeholder="Your Email"
             type="email"
             required
@@ -78,6 +85,7 @@ const Contact = () => {
             required
             className="w-full border-2 border-neutral-800/50 p-3"
             placeholder="What do you want to say?"
+            name="message"
           ></textarea>
           <br />
           <br />
