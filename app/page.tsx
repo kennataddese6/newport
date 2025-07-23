@@ -8,7 +8,12 @@ import Holla from "@/components/ui/holla"
 import Skills from "@/components/ui/skills"
 import { SparklesCore } from "@/components/ui/sparkles"
 import Works from "@/components/ui/works"
-import { IconHome, IconMessage, IconUser } from "@tabler/icons-react"
+import {
+  IconBriefcase,
+  IconHome,
+  IconMessage,
+  IconUser,
+} from "@tabler/icons-react"
 export default function Page() {
   const navItems = [
     {
@@ -24,7 +29,9 @@ export default function Page() {
     {
       name: "Project",
       link: "/about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
+      icon: (
+        <IconBriefcase className="h-4 w-4 text-neutral-500 dark:text-white" />
+      ),
     },
     {
       name: "Contact",
