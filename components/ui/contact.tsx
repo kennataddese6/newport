@@ -66,7 +66,12 @@ const Contact = () => {
         >
           <Input id="firstname" placeholder="Your Name" type="text" required />
           <br />
-          <Input id="firstname" placeholder="Your Email" type="text" required />
+          <Input
+            id="firstname"
+            placeholder="Your Email"
+            type="email"
+            required
+          />
           <br />
 
           <textarea
