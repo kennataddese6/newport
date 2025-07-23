@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+import { Input } from "../ui/input"
 const Contact = () => {
   return (
     <div className="w-full" id="contact">
@@ -31,27 +31,18 @@ const Contact = () => {
         />
 
         <form className="w-[96%] md:w-[32%] bg-black/20 backdrop-blur-lg  border-2 border-neutral-800 mx-auto px-8 py-14 rounded-lg">
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="border-2 border-neutral-800/50 p-3 w-full rounded-md"
-          />
+          <Input id="firstname" placeholder="Your Name" type="text" />
           <br />
+          <Input id="firstname" placeholder="Your Email" type="text" />
           <br />
-          <input
-            type="text"
-            placeholder="Your Email"
-            className=" border-2 border-neutral-800/50 p-3 w-full rounded-md"
-          />
-          <br />
-          <br />
+
           <textarea
             className="w-full border-2 border-neutral-800/50 p-3"
             placeholder="Your Message"
           ></textarea>
           <br />
           <br />
-          <button className="border-2 cursor-pointer border-neutral-800/50 w-full p-3 rounded-md">
+          <button className="border-2 cursor-pointer border-neutral-800/50 hover:bg-black/40 w-full p-3 rounded-md">
             Send
           </button>
         </form>
