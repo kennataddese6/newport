@@ -1,7 +1,7 @@
 "use client"
+import { LinkPreview } from "@/components/ui/link-preview"
 import { motion, useScroll, useTransform } from "motion/react"
 import Image from "next/image"
-import Link from "next/link"
 import { HoverBorderGradient } from "./hover-border-gradient"
 const Hero = () => {
   const { scrollYProgress } = useScroll()
@@ -18,9 +18,8 @@ const Hero = () => {
         Working to bring imagination to reality and thriving to make
         masterpieces <br /> of the generation{" "}
       </p>
-      <Link
-        href="https://www.upwork.com/freelancers/~013312695998cc584d"
-        target="_blank"
+      <LinkPreview
+        url="https://www.upwork.com/freelancers/~013312695998cc584d"
         className=" flex justify-center text-center"
       >
         <HoverBorderGradient
@@ -30,7 +29,7 @@ const Hero = () => {
         >
           <span>Let{"'"}s Work</span>
         </HoverBorderGradient>
-      </Link>
+      </LinkPreview>
       <motion.div style={{ scale, y, opacity }}>
         <Image
           src={"/earth.png"}

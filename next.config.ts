@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
         "https://apuedge.com/wp-content/uploads/bh_accretiondisk_sim_stationary_websize.gif",
       ),
     ],
+    domains: [
+      "api.microlink.io", // Microlink Image Preview
+    ],
   },
 }
 
