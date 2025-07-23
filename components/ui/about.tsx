@@ -80,7 +80,10 @@ interface GridItemProps {
 
 const GridItem = ({ area, image, title, description }: GridItemProps) => {
   return (
-    <div className="mt-8 relative h-full bg-white/10 backdrop-blur-sm  rounded-2xl border max-w-72 mx-auto  md:rounded-2xl p-px ">
+    <motion.div
+      drag
+      className="mt-8 cursor-grab relative h-full bg-white/10 backdrop-blur-sm  rounded-2xl border max-w-72 mx-auto  md:rounded-2xl p-px "
+    >
       <GlowingEffect
         spread={40}
         glow={true}
@@ -105,6 +108,6 @@ const GridItem = ({ area, image, title, description }: GridItemProps) => {
           </h2>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
