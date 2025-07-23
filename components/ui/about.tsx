@@ -41,7 +41,7 @@ const About = () => {
       />
       <motion.img
         style={{ y: saturny, scale: saturnscale }}
-        src={"/saturn.png"}
+        src={"/image.png"}
         width={1600}
         height={1600}
         alt="Saturn Image"
