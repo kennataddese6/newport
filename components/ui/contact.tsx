@@ -56,7 +56,7 @@ const Contact = () => {
           height={1200}
           unoptimized
           alt="Contact"
-          className="w-[24rem] -rotate-z-12 absolute -right-32 -translate-x-1/2 bottom-36 -z-10"
+          className="w-[24rem] -rotate-z-12 absolute -right-32 -translate-x-1/2 bottom-36 -z-20"
         />
 
         <form
