@@ -7,9 +7,12 @@ const Holla = () => {
       <h1 className="text-3xl font-semibold text-center mt-24 ">Holla at me</h1>
       <motion.div
         initial={{ scale: 0.8, rotate: -10, translateY: 180 }}
-        whileHover={{ scale: 1, rotate: 0, translateY: 0 }}
+        whileInView={{ scale: 1, rotate: 0, translateY: 0 }}
+        whileTap={{ scale: 0.9, rotate: 0, translateY: 0 }}
         transition={{
-          duration: 0.7,
+          duration: 1,
+          delay: 0.5,
+          type: "spring",
           stiffness: 300,
           damping: 20,
           ease: "easeInOut",
